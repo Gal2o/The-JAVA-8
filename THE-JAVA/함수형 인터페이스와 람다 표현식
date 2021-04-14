@@ -1,0 +1,6 @@
+# 함수형 인터페이스 (Functional Interface)
+  - 추상 메소드를 딱 하나만 가지고 있는 인터페이스
+  - 인터페이스에서는 abstract를 생략할 수 있다
+    - ``` abstract void doIt() == void doIt() ```
+  
+  
