@@ -1,0 +1,13 @@
+package me.mac2.java8to11;
+
+public interface InterfaceBar {
+    // InterfaceDescription를 extends 하면 메소드들을 전부 사용할 수 있다.
+    // 새로운 임의의 인터페이스에서 extends 했을 때, printNameUpperCase를 사용하고 싶지 않다면
+    // 기본 구현체만 선언하면 사용하지 않는다
+    // void printNameUpperCase();
+
+    // 상속받지 않았을 때, 다른 인터페이스와 같은 이름의 default 메소드가 존재 한다면,
+    default void printNameUpperCase() {
+        System.out.println("Bar Interface");
+    }
+}
