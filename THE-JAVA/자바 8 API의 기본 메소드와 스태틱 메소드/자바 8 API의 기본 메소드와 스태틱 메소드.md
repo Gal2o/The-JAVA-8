@@ -1,0 +1,17 @@
+# 자바 8 API의 기본 메소드와 스태틱 메소드
+
+## Iterable의 기본 메소드
+  - forEach()
+  - spliterator()
+
+## Collection의 기본 메소드
+  - stream() / parallelStream()
+  - removeIf(Predicate)
+  - spliterator()
+
+## Comparator의 기본 메소드 및 스태틱 메소드
+  - reversed()
+  - thenComparing()
+  - static reverseOrder() / naturalOrder()
+  - static nullsFirst() / nullsLast()
+  - static comparing()
