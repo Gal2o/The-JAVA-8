@@ -13,7 +13,7 @@
 
 
 ## 중개 오퍼레이션
-  - Stream을 리 한다.
+  - Stream을 리턴한다.
   - Stateless / Stateful 오퍼레이션으로 더 상세하게 구분할 수도 있다. (대부분은 Stateless지만 distinct나 sorted 처럼 이전 이전 소스 데이터를 참조해야 하는 오퍼레이션은 Stateful 오퍼레이션이다.)
   - filter, map, limit, skip, sorted, ...
 
