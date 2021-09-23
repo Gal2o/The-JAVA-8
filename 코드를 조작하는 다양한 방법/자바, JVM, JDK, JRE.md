@@ -1,0 +1,30 @@
+# JVM 이해하기
+  - <img src="https://user-images.githubusercontent.com/35948339/134514467-d991716f-e031-41e4-86bd-03bcbf25b431.png" width=650>
+  - ## 📱 JVM (Java Virtual Machine)
+    - #### 자바 가상 머신 : `자바 바이트 코드(.class)`를 OS에 맞춰서 변환시켜준다 <br><br> `인터프리터, JIT (Just in Time)`를 이용하여 변환
+    - #### 바이트 코드를 실행하는 표준(JVM 자체는 표준)이자 구현체(특정 벤더가 구현한 JVM)다
+    - #### ex. JVM 벤더 : 오라클, 아마존, Azul
+    - #### 특정 플랫폼에 종속적이다
+    - #### JVM은 홀로 배포되지 않는다 (최소 JRE 단위로 제공된다)
+  ------
+  - ## JRE (Java Runtime Environment) : JVM + 라이브러리
+    - #### JRE 단위 배포의 목적은 Java application을 실행 하는 것
+    - #### Java 실행하는데 필요한 것들만 들어있다 (ex. JVM, 라이브러리, rt.jar, 프로퍼티 세팅, 리소스 파일)
+    - #### 개발관련 툴은 제공하지 않음 (JDK에서 제공)
+  ------
+  - ## JDK (Java Development Kit) : JRE + 개발 툴
+    - #### JDK 11버전 부터는 JRE를 따로 제공하지 않는다
+    - #### JAVA 9부터 Module System을 제공하므로, 나만의 JRE 환경을 구성할 수도 있다 (Jlink)
+    - #### 소스 코드를 작성할 때, 사용하는 자바 언어는 플랫폼에 독립적이다
+    - #### ⭐한번 쓰고 어디에서나 실행 
+  ------
+  - ## JAVA
+    - #### 프로그래밍 언어
+    - #### JDK에 들어있는 자바 컴파일러(javac)를 사용하여 바이트코드(.class)로 컴파일 할 수 있다.
+    - #### 자바 유료화? ➡ ex. 오라클이 만든 JDK 11 부터 상용으로 사용할 때 유료 / 아마존 (Corrretto)는 무료
+  ------
+  - ## JVM 언어
+    - #### JVM 기반으로 동작하는 프로그래밍 언어
+    - #### ‼ 최초의 JVM은 JAVA만을 지원하기 위해 만들었지만, `.class파일`만 있으면 실행할 수 있다 <br><br> ➡ JAVA와의 의존성이 그렇게 높지는 않다.
+    - #### 즉, 어떠한 다른 프로그래밍 언어를 사용해서 컴파일을 했을 때, `.java / .class파일`이 만들어 진다면 <br><br> JVM을 사용할 수 있다
+    - #### ex. 클로저, 그루비, Kotlin, Scala
