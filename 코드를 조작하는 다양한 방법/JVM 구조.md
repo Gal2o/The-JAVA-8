@@ -22,3 +22,6 @@
   ------
   - ## JNI (Java Native Interface)
     - #### JAVA 애플리케이션에서 C, C++, 어셈블리어로 작성된 함수를 사용할 수 있는 방법 제공 <br><br> ex. Thread.currentThread()
+    - #### Native 키워드를 사용한 메소드 호출
+  - ## 네이티브 메소드 라이브러리
+    - #### C, C++
