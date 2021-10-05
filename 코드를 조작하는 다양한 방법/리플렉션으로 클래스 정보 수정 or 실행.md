@@ -1,11 +1,11 @@
 # 리플렉션으로 클래스 정보 수정 or 실행하기
 
 ## Class 인스턴스 만들기
-  - #### 일단 클래스 객체를 하나 만든다
+  - ### 일단 클래스 객체를 하나 만든다
   ``` java
     Class<?> bookClass = Class.forName("com.example.thejavacode.Book2");
   ```
-  - #### 인스턴스 만들기
+  - ### 인스턴스 만들기
   ``` java
     // 기존 클래스의 인스턴스를 만드는 방법
     // 지금은 권장하지 않는다.
@@ -28,7 +28,7 @@
   ```
 -------
 ## 클래스의 정보 조회 및 수정
-  - #### 클래스의 필드 값을 가져오기
+  - ### 클래스의 필드 값을 가져오기
   ``` java
     // static 객체 가져오기
     public static String A = "A";
@@ -42,12 +42,12 @@
     a.set(null, "Change A");
     System.out.println(a.get(null));
   ```
-  - #### 결과
+  - ### 결과
   ```
     A
     Change A
   ```
-  - #### static이 아닌 지역변수 필드 값 가져오기
+  - ### static이 아닌 지역변수 필드 값 가져오기
   ``` java
     // 인스턴스 생성 후, 값을 초기화 하는 String B
     private String B = "B";
@@ -65,14 +65,14 @@
     b.set(book2, "Change B");
     System.out.println(b.get(book2));
   ```
-  - #### 결과
+  - ### 결과
   ```
     Book2
     Change B
   ```
 --------
 ## 클래스의 메소드 정보 조회 및 수정
-  - #### 클래스의 메소드 가져오기
+  - ### 클래스의 메소드 가져오기
   ``` java
     // C()를 호출하면 C를 출력하는 메소드
     private void C() {
@@ -89,11 +89,11 @@
     // 클래스의 인스턴스를 넘겨줘야 한다
     c.invoke(book2);
   ```
-  - #### 결과
+  - ### 결과
   ```
     C
   ```
-  - #### 매개 변수를 필요로 하는 메소드 조회하기
+  - ### 매개 변수를 필요로 하는 메소드 조회하기
   ``` java
     public int sum(int left, int right) {
         return left + right;
@@ -104,7 +104,7 @@
     int result = (int) sum.invoke(book2, 1, 2);
     System.out.println(result);
   ```
-  - #### 결과
+  - ### 결과
   ```
     3
   ```
